@@ -17,7 +17,7 @@ export default function SEO ({
   shouldIndexPage = true
 }: SEOProps) {
   const pageTitle = `${title} ${shouldExcludeTitleSuffix ? '' : '| Gabriel Campos'}`
-  const pageImage = image ? `${process.env.NEXT_PUBLIC_SITE_URL}/${image}` : undefined
+  const pageImage = image ? image : undefined
 
   return (
     <Head>

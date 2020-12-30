@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
 
   render () {
     return (
-      <Html>
+      <Html lang='en'>
         <Head>
           <meta name="google-site-verification" content="j9u3qeAdRsZNjiVE4p72VQSU04sRZA3ec-bq5Qhhmmg" />
         </Head>

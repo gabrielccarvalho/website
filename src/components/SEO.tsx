@@ -17,7 +17,7 @@ export default function SEO ({
   shouldIndexPage = true
 }: SEOProps) {
   const pageTitle = `${title} ${shouldExcludeTitleSuffix ? '' : '| Gabriel Campos'}`
-  const pageImage = image ? image : undefined
+  const pageImage = image ? `${process.env.NEXT_PUBLIC_SITE_URL}/${image}` : undefined
 
   return (
     <Head>
@@ -34,6 +34,12 @@ export default function SEO ({
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="referrer" content="no-referrer-when-downgrade" />
       <meta name="google" content="notranslate" />
+
+      {/* Facebook */}
+      { pageImage && <meta property="og:image" content={pageImage} /> }
+
+      {/* Twitter */}
+      { pageImage && <meta property="twitter:image" content={pageImage} /> }
     </Head>
   )
 }

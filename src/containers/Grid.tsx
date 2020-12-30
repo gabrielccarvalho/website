@@ -28,8 +28,8 @@ const Card = styled.a`
   transition: color 0.15s ease, border-color 0.15s ease;
 
   &:hover {
-    color: #0070f3;
-    border-color: #0070f3;
+    color: #29bc9b;
+    border-color: #29bc9b;
   }
 `
 

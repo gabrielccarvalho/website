@@ -33,7 +33,7 @@ const Card = styled.a`
   }
 `
 
-const Title = styled.h3`
+const Title = styled.h2`
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
   line-height: 1.15;
@@ -71,7 +71,7 @@ const CARDS = [
 export default function Grid() {
   
   const cards = CARDS.map((c, i) => (
-    <Card href={ c.link } target='_blank' key={i}>
+    <Card href={ c.link } target='_blank' rel='noreferrer noopener' key={i}>
       <Title> { c.name } </Title>
       <Description> { c.description } </Description>
     </Card>

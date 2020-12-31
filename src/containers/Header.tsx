@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import styled from 'styled-components'
 
+import ThemeMenu from './ThemeMenu'
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -39,6 +41,7 @@ const Header = () => {
 
   return (
     <Container>
+      <ThemeMenu />
       <ProfilePicture />
       <Name> Gabriel Campos </Name>
       <Description> A technology enthusiast passionate about JavaScript and OpenSource </Description>

@@ -14,8 +14,18 @@ const Container = styled.div`
 
 const ThemeSwitcher = styled.div`
   position: absolute;
+  display: flex;
+  flex-direction: row;
   top: 1rem;
   right: 1rem;
+`
+
+const ThemeTitle = styled.p`
+  margin: 0;
+  padding-right: 10px;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1.3rem;
 `
 
 const ProfilePicture = styled(Image).attrs({ 
@@ -53,6 +63,12 @@ const Header = ({ toggleTheme }: HeaderProps) => {
   return (
     <Container>
       <ThemeSwitcher>
+        <ThemeTitle>
+          { title === 'dark'
+            ? 'Turn the lights back on'
+            : 'Turn all the lights off'
+          }
+        </ThemeTitle>
         <Switch 
           onChange={toggleTheme}
           checked={title === 'dark'}

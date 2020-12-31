@@ -57,9 +57,9 @@ const CARDS = [
     description: 'Great place to know me better.',
   },
   {
-    name: 'Twitch',
-    link: 'https://www.twitch.tv/overzaoTV',
-    description: 'When I\'m not coding I often play some games here.',
+    name: 'Linkedin',
+    link: 'https://www.linkedin.com/in/gabriel-campos-b7618418a',
+    description: 'The easiest way to find me and get in thouch is through linkedin.',
   },
   {
     name: 'Medium',

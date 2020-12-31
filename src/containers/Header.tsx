@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import styled from 'styled-components'
+import styled, { ThemeContext } from 'styled-components'
+import Switch from 'react-switch'
+import { lighten } from 'polished'
 
 const Container = styled.div`
   display: flex;
@@ -8,6 +10,12 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+`
+
+const ThemeSwitcher = styled.div`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 `
 
 const ProfilePicture = styled(Image).attrs({ 
@@ -35,10 +43,25 @@ const Description = styled.p`
   font-size: 1.3rem;
 `
 
-const Header = () => {
+type HeaderProps = {
+  toggleTheme(): void; 
+}
+
+const Header = ({ toggleTheme }: HeaderProps) => {
+  const { colors, title } = React.useContext(ThemeContext)
 
   return (
     <Container>
+      <ThemeSwitcher>
+        <Switch 
+          onChange={toggleTheme}
+          checked={title === 'dark'}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          onColor={colors.primary}
+          offColor={lighten(0.5, colors.text)}
+        />
+      </ThemeSwitcher>
       <ProfilePicture />
       <Name> Gabriel Campos </Name>
       <Description> A technology enthusiast passionate about JavaScript and OpenSource </Description>

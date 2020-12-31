@@ -23,13 +23,13 @@ const Card = styled.a`
   padding: 1.5rem;
   text-align: left;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid ${({ theme }) => theme.colors.foreground};
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
 
   &:hover {
-    color: #29bc9b;
-    border-color: #29bc9b;
+    color: ${({ theme }) => theme.colors.text};
+    border-color: ${({ theme }) => theme.colors.text};
   }
 `
 
@@ -57,9 +57,9 @@ const CARDS = [
     description: 'Great place to know me better.',
   },
   {
-    name: 'Twitch',
-    link: 'https://www.twitch.tv/overzaoTV',
-    description: 'When I\'m not coding I often play some games here.',
+    name: 'Linkedin',
+    link: 'https://www.linkedin.com/in/gabriel-campos-b7618418a',
+    description: 'The easiest way to find me and get in thouch is through linkedin.',
   },
   {
     name: 'Medium',

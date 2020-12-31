@@ -23,13 +23,13 @@ const Card = styled.a`
   padding: 1.5rem;
   text-align: left;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid ${({ theme }) => theme.colors.foreground};
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
 
   &:hover {
-    color: #29bc9b;
-    border-color: #29bc9b;
+    color: ${({ theme }) => theme.colors.text};
+    border-color: ${({ theme }) => theme.colors.text};
   }
 `
 

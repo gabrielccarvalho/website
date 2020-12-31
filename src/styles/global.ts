@@ -6,7 +6,8 @@ export default createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #333333;
+    color: ${({ theme }) => theme.colors.text};
+    background: ${({ theme }) => theme.colors.background}
   }
   
   a {
@@ -19,7 +20,7 @@ export default createGlobalStyle`
   }
   
   ::selection {
-    color: black;
-    background: #aaffec;
+    color: ${({ theme }) => theme.colors.text};
+    background: ${({ theme }) => theme.colors.primary};
   }
 `

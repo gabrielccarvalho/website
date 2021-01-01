@@ -100,8 +100,44 @@ const Header = ({ toggleTheme }: HeaderProps) => {
         <Switch 
           onChange={toggleTheme}
           checked={title === 'dark'}
-          checkedIcon={false}
-          uncheckedIcon={false}
+          checkedIcon={
+            <svg 
+              viewBox="-4 -3 24 24" 
+              width="20" 
+              height="20" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              fill="none" 
+              shape-rendering="geometricPrecision"
+            >
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+          }
+          uncheckedIcon={
+            <svg
+              viewBox="-5 -5 24 24"
+              width="20"
+              height="20"
+              stroke="currentColor" 
+              stroke-width="1.5" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              fill="none" 
+              shape-rendering="geometricPrecision"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <path d="M12 1v2"></path>
+              <path d="M12 21v2"></path>
+              <path d="M4.22 4.22l1.42 1.42"></path>
+              <path d="M18.36 18.36l1.42 1.42"></path>
+              <path d="M1 12h2"></path>
+              <path d="M21 12h2"></path>
+              <path d="M4.22 19.78l1.42-1.42"></path>
+              <path d="M18.36 5.64l1.42-1.42"></path>
+            </svg>
+          }
           onColor={colors.primary}
           offColor={lighten(0.5, colors.text)}
         />

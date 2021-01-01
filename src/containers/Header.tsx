@@ -50,7 +50,7 @@ const ThemeTitle = styled.p`
 
 const ProfilePicture = styled(Image).attrs({ 
   src: '/assets/me.jpeg',
-  alt: 'Picture of the author',
+  alt: 'Gabriel Campos',
   width: 200,
   height: 200,
   layout: 'fixed'

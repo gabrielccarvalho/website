@@ -31,6 +31,11 @@ const Card = styled.a`
     color: ${({ theme }) => theme.colors.text};
     border-color: ${({ theme }) => theme.colors.text};
   }
+
+  @media (max-width: 425px) {
+    flex-grow: 1;
+    max-width: 80%;
+  }
 `
 
 const Title = styled.h2`

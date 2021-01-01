@@ -32,7 +32,7 @@ const Card = styled.a`
     border-color: ${({ theme }) => theme.colors.text};
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 425px) {
     flex-grow: 1;
     max-width: 80%;
   }

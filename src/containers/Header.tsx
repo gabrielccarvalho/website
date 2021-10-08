@@ -87,7 +87,6 @@ type HeaderProps = {
 
 const Header = ({ toggleTheme }: HeaderProps) => {
   const { colors, title } = React.useContext(ThemeContext)
-
   return (
     <Container>
       <ThemeSwitcher>

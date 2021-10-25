@@ -30,7 +30,8 @@ const Skill = styled.p`
   margin: 0;
   line-height: 1.5;
   font-size: 1.3rem;
-  max-width: 25rem;
+  text-align: center;
+  width: 10rem;
 
   @media (max-width: 425px) {
     padding: 0 1rem;

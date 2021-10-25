@@ -6,14 +6,24 @@ import { Progress } from '@/components'
 
 const Wrapper = styled.div`
   display: flex;
-  position: absolute;
   flex-direction: row;
+  width: 60rem;
+
+  @media (max-width: 1110px) {
+    flex-direction: column;
+    align-items: center;
+    width: unset;
+  }
 `
 
 const Col = styled.div`
   display: flex;
   flex-direction: column;
   padding: 3rem;
+
+  @media (max-width: 1024px) {
+    padding: 1rem;
+  }
 `
 
 const Row = styled.div`
@@ -26,7 +36,7 @@ const ProfilePicture = styled(Image).attrs({
   alt: 'Gabriel Campos',
   width: 400,
   height: 400,
-  layout: 'fixed'
+  layout: 'responsive'
   })`
   border-radius: 5rem;
 `
@@ -55,10 +65,6 @@ const Description = styled.p`
   }
 `
 
-const Skill = styled(Description)`
-  text-align: start;
-`
-
 const Header = () => {
   return (
     <Wrapper>
@@ -78,7 +84,7 @@ const Header = () => {
           Skills
         </Description>
         <Row>
-          <Progress skill='React' value={90} />
+          <Progress skill={`React (JS/RN)`} value={90} />
         </Row>
         <Row>
           <Progress skill='Next' value={100} />

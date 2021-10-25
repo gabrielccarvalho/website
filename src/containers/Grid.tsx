@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20rem;
+  width: 100%;
 `
 
 const CardContainer = styled.div`

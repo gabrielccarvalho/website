@@ -1,13 +1,9 @@
 import React from 'react'
 
-import { Header, Grid } from '@/containers'
 import { SEO } from '@/components'
+import { Sidebar, Grid } from '@/containers'
 
-type HomeProps = {
-  toggleTheme(): void;
-}
-
-export default function Home({ toggleTheme }: HomeProps) {
+export default function Home() {
   return (
     <>
       <SEO 
@@ -15,7 +11,7 @@ export default function Home({ toggleTheme }: HomeProps) {
         description='A technology enthusiast passionate about JavaScript and OpenSource'
         image='/assets/me.jpeg'
       />
-      <Header toggleTheme={toggleTheme} />
+      <Sidebar />
       <Grid />
     </>
   )

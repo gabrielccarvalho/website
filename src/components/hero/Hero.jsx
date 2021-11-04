@@ -3,8 +3,8 @@ import Modal from "react-modal";
 import Index from "../../components/about/index";
 
 const heroContent = {
-  heroImage: "img/hero/me.png",
-  heroMobileImage: "img/hero/img-mobile.png",
+  heroImage: "img/hero/me.jpg",
+  heroMobileImage: "img/hero/img-mobile.jpg",
   heroTitleName: "Gabriel Campos",
   heroDesignation: "Full Stack Developer",
   heroDescriptions: `I'm a Brazilian based full stack developer focused on

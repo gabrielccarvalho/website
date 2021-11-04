@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
@@ -9,7 +8,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
+        <Head />
         <meta charset="utf-8" />
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,7 +28,6 @@ class MyDocument extends Document {
         />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <title>Gabriel Campos | Developer</title>
-        </Head>
         <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>

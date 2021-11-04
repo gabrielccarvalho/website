@@ -1,6 +1,7 @@
 // import App from 'next/app'
 import React, { useEffect } from "react";
 import AOS from "aos";
+import "../assets/scss/main.scss";
 import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }) {

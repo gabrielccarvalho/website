@@ -3,8 +3,8 @@ import Modal from "react-modal";
 import Index from "../../components/about/index";
 
 const heroContent = {
-  heroImage: "img/hero/dark.png",
-  heroMobileImage: "img-mobile",
+  heroImage: "img/hero/me.png",
+  heroMobileImage: "img/hero/img-mobile.png",
   heroTitleName: "Gabriel Campos",
   heroDesignation: "Full Stack Developer",
   heroDescriptions: `I'm a Brazilian based full stack developer focused on
@@ -27,14 +27,14 @@ const Hero = () => {
           className="col-lg-4 bg position-fixed d-none d-lg-block"
           style={{
             backgroundImage: `url(${
-              process.env.PUBLIC_URL + heroContent.heroImage
+              heroContent.heroImage
             })`,
           }}
         ></div>
         <div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">
           <div>
             <img
-              src={`img/hero/${heroContent.heroMobileImage}.png`}
+              src={heroContent.heroMobileImage}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
             />

@@ -84,7 +84,7 @@ const Header = () => {
           Skills
         </Description>
         <Row>
-          <Progress skill={`React (JS/RN)`} value={90} />
+          <Progress skill={`React (JS/RN)`} value={100} />
         </Row>
         <Row>
           <Progress skill='Next' value={100} />

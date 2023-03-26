@@ -20,10 +20,16 @@ const experienceContent = [
     details: `Web & Mobile development using React / React Native / Next stack.`,
   },
   {
-    year: "10/2021 - Present",
+    year: "10/2021 - 01/2023",
     position: "React Developer Pleno - Full Time",
     compnayName: "Boa Vista",
     details: `Web using React stack.`,
+  },
+  {
+    year: "01/2023 - Present",
+    position: "React / React Native Developer Pleno - Full Time",
+    compnayName: "Acordo Certo",
+    details: `Web and mobile using React stack.`,
   },
 ];
 
